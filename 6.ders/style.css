@@ -93,14 +93,14 @@ div.thirdDiv {
 } */
 
 /* text-align yatay hizalama */
-body {
+/* body {
     text-align: center;
 }
 div {
     border: 1px solid black;
     padding:10px;
-    width:300px;
-    height:300px;
+    width:400px;
+    height:400px;
     text-align:justify;
 }
 div img {
@@ -124,4 +124,24 @@ h2 {
 }
 h2 {
     text-transform: capitalize;
+} */
+
+div {
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    word-spacing:15px;
+    /* white-space:nowrap; */
+}
+
+h1 {
+    /* text-shadow: 2px 2px 5px red; */
+    text-shadow: 1px 1px 2px yellow, 0 0 25px red, 0 0 10px green
+}
+
+span {
+    writing-mode: vertical-rl;
+    color:red;
+    height:100px;
+    text-align:center;
 }

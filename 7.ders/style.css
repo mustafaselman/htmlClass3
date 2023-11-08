@@ -1,0 +1,26 @@
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+}
+i {
+    font-style: normal;
+    font-weight:bold;
+}
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bolder
+}
+h3 {
+    font-family: 'Edu TAS Beginner', cursive;
+    /* font-variant:small-caps; */
+}
+
+p.fontsize1 {
+    font-size:48px;
+}
+p.fontsize2 {
+    font-size:3rem;
+}
+p.fontsize3 {
+    font-size:3vw;
+}
