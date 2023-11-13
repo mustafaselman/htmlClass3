@@ -1,0 +1,84 @@
+/* div {
+    background-color:yellow;
+    width:300px;
+    height:300px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    overflow-wrap: break-word;
+
+} */
+
+/* div {
+    width:300px;
+    overflow: hidden;
+    border: 1px solid black;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+} */
+
+/* .div1 {
+    background:red;
+    float:right;
+    padding:15px;
+}
+.div2 {
+    background:yellow;
+    float:left;
+    padding:15px;
+}
+.div3 {
+    background:green;
+    padding:15px;
+    float:left;
+}
+
+p {
+    clear:both;
+} */
+
+/* p::first-line {
+    color:red;
+    font-variant:small-caps;
+}
+p::first-letter {
+    color:blue;
+    font-size:xx-large;
+}
+p::before {
+    content:"PARAGRAF BAŞLAMADAN YAZILACAK METİN";
+    color:aqua;
+}
+p::after {
+    content:"PARAGRAF BİTERKEN YAZILACAK METİN";
+    color:blueviolet;
+}
+p::selection {
+    color:chartreuse;
+    background-color: yellow;
+} */
+
+/* a[target]{
+    background-color:yellow;
+} */
+/* a[target="_blank"]{
+    background-color:red;
+} */
+
+/* [class~="site"]{
+    border:5px solid black;
+} */
+
+/* [class*="site"]{
+    border:5px solid black;
+} */
+
+input[type="text"]:focus{
+    background-color:red;
+}
+input[type="button"]:hover{
+    background-color: yellow;
+    color:blueviolet;
+}
+input[value="click here"]:active{
+    background-color: blue;
+}
