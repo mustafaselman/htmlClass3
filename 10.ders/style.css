@@ -1,0 +1,120 @@
+/* div {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    color:white;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    transition:all 2s;
+}
+
+div.a:hover {
+    width:200px;
+}
+div.b:hover {
+    background-color: white;
+    color:blue;
+}
+div.c:hover {
+    border:10px solid black;
+    outline:10px solid red;
+} */
+
+/* div {
+    width:100px;
+    height:100px;
+    background-color:blue;
+    color:white;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    transition:all 2s;
+} */
+/* translate kaydırma işlemi yapar */
+/* div.transformx:hover {
+    transform: translateX(100px)
+}
+div.transformy:hover {
+    transform:translateY(100px)
+}
+div.transformxy:hover {
+    transform:translate(100px,100px)
+} */
+
+/* div.transformx:hover {
+    transform: rotateX(360deg)
+}
+div.transformy:hover {
+    transform:rotateY(360deg)
+}
+div.transformxy:hover {
+    transform:rotate(360deg)
+} */
+
+/* div.transformx:hover {
+    transform: scaleX(2)
+}
+div.transformy:hover {
+    transform:scaleY(2)
+}
+div.transformxy:hover {
+    transform:scale(0.5,0.5)
+} */
+
+/* css animation */
+/* div {
+    width:100px;
+    height:100px;
+    background-color:red;
+    position:relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-fill-mode:forwards; 
+} */
+
+/* @keyframes example {
+    from {background-color:red;}
+    to {background-color:yellow;}
+} */
+
+/* @keyframes example {
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: blue;}
+    100% {background-color: green;}
+} */
+
+/* @keyframes example {
+    0% {background-color: red; left:0px;top:0px}
+    25% {background-color: yellow;left:200px;top:0px;}
+    50% {background-color:blue;left:200px;top:200px;}
+    75% {background-color: green;left:0px;top:200px;}
+    100% {background-color:black;left:0px;top:0px;}
+} */
+
+* {
+    box-sizing:border-box;
+}
+
+.column {
+    float:left;
+    width:25%;
+    padding:20px;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .column {
+        width:50%;
+        color:blue;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        width:100%;
+        color:red;
+    }
+}
