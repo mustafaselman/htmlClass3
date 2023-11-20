@@ -1,0 +1,61 @@
+.grid-item {
+    background-color: whitesmoke;
+    border:1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.grid-container {
+    background-color:blue;
+    height:800px;
+    padding:10px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    /* justify-content: start;
+    align-content: space-evenly; */
+}
+
+/* .item1 {
+    grid-column-start: 1;
+    grid-column-end:4;
+} */
+
+/* .item1 {
+    grid-column: 1 / span 3 ;
+} */
+/* .item2 {
+    grid-column-start:4;
+    grid-column-end:6;
+} */
+
+/* .item2 {
+    grid-row: 2 / span 4 ;
+}
+
+.item3 {
+    grid-row: 2 / span 2 ;
+}
+.item4 {
+    grid-row: 2 / span 2;
+} */
+
+/* grid-area: grid-row-start grid-column-start grid-row-end grid-column-end  açıklama: column dediğimizde genişlik anlayın, row dediğimizde uzunluk anlayın*/ 
+.item5 {
+    grid-area: 2 / 2 / span 2 / span 2 ;
+}
+
+.item4 {
+    grid-area: 2 / 1 / span 3 / span 1 ; 
+}
+
+.item6 {
+    grid-area: 1 / 1 / span 1 / span 3 ;
+}
+
+.item1 {
+    grid-area: 4 / 2 / span 1 / span 2 ;
+}
