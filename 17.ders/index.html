@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -15,81 +15,181 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container my-3">
-        <ul class="nav nav-pills nav-justified">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Active</a>
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <br />
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" hre="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            hfref="#"
+            >Dropdown</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">Link1</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li>
+              <a class="dropdown-item" href="#">Link2</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li>
+              <a class="dropdown-item" href="#">Link3</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <br>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link active" hre="#">Active</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" hfref="#">Dropdown</a>
-                <ul class="dropdown-menu"> 
-                    <li>
-                        <a class="dropdown-item" href="#">Link1</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Link2</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Link3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-        <br>
-        <!-- navbars -->
-       
-    </div> 
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+      <br />
+      <!-- navbars -->
+    </div>
     <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
-            <div class="container-fluid justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link3</a>
-                    </li>
-                </ul>
+      <div class="container-fluid justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item align-self-center">
+            <a class="navbar-text navbar-brand" href="#">
+              <img
+                src="avatar.png"
+                alt="logo"
+                class="rounded-pill"
+                style="width: 40px"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Link2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-around">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center justify-content-evenly"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav justify-content-around" style="width:20%">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel -->
+
+
+    <!-- <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" ></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                 <img src="picture1.jpg" alt="picture1" class="d-block mx-auto" style="width:100%;max-height:550px;">
             </div>
-        </nav>
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-            <div class="container-fluid">
-                <ul class="navbar-nav ">
-                    <li class="nav-item align-self-center">
-                        <a class="navbar-text navbar-brand" href="#">
-                            <img src="avatar.png" alt="logo" class="rounded-pill" style="width:40px;">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Link2</a>
-                    </li>
-                </ul>
+            <div class="carousel-item">
+                 <img src="picture2.jpg" alt="picture2" class="d-block mx-auto" style="width:100%;max-height:550px;">
             </div>
-        </nav>
-</body>
+            <div class="carousel-item">
+                 <img src="picture3.png" alt="picture3" class="d-block mx-auto" style="width:100%;max-height:550px;">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div> -->
+
+    <!-- modal -->
+    <br>
+    <span>
+        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal">Kişisel Bilgiler
+        </button>
+    </span>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Ahmet ARI
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, amet quasi? Repellat voluptatum omnis consequatur modi id, fugit alias, distinctio nam ducimus in quos vel, libero est qui perspiciatis ea dolore recusandae illo reiciendis. Tempora provident quis, veniam sint molestiae, fuga porro aliquam voluptas voluptates adipisci, deleniti quam reprehenderit saepe quos nulla corrupti nemo illo. Reprehenderit explicabo alias dolore ducimus officiis rem accusantium consectetur dignissimos quaerat dolorem tempore recusandae sint animi, voluptatum minus beatae esse velit quos modi rerum, excepturi amet cupiditate. Ut aperiam rem tempore sint corporis mollitia perferendis, sequi neque, quod excepturi consequuntur quis tempora deleniti consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium corrupti iste, quis iure laboriosam nemo, ut sequi asperiores aliquam fugit numquam quas adipisci, nam ipsa? Explicabo, reprehenderit maxime ratione impedit alias labore consectetur aliquid corrupti quia voluptate omnis repudiandae soluta? Voluptatum soluta ea doloremque sed vero fugiat, velit earum numquam? Cupiditate facilis nostrum porro minima quisquam. Velit porro reiciendis ipsum quidem impedit ratione aspernatur consectetur possimus! Esse consequatur ratione pariatur est doloribus et ea autem voluptas rerum nostrum in repudiandae aspernatur voluptatem modi consequuntur neque deserunt, quos nulla porro illo voluptate aliquam deleniti. Numquam dolore officiis culpa sapiente libero delectus.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div style="height:300px;"></div>
+
+  </body>
 </html>
