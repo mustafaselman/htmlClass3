@@ -197,7 +197,7 @@
     <div class="container mt-3">
         <h3>Form Validation</h3>
         <!-- was-validated -->
-        <form class="needs-validation">
+        <form class="needs-validation" novalidate>
             <div class="my-3">
                 <label class="form-label">Username:</label>
                 <input type="text" class="form-control" placeholder="Enter username" required>
@@ -219,5 +219,49 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+
+    <!-- grid yapısında 12 ye bölme mantığı var -->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-7 col-sm-3 col-lg-5 text-bg-primary">
+                col
+            </div>
+            <div class="col-2 col-sm-5 col-lg-5 text-bg-secondary">
+                col2
+            </div>
+            <div class="col-3 col-sm-4 col-lg-2 text-bg-danger">
+                col3
+            </div>
+        </div>
+    </div>
+
+    <div style="height:300px;"></div>
+
+
+
+
+
+
+    <script>
+       
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
   </body>
 </html>
