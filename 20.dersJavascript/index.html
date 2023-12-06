@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20.ders</title>
+    <script>
+        function myFunction1() {
+            document.getElementById("demo").innerHTML = "Head içindeki script çalıştı"
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- html içeriğini değiştirebilir -->
+    <!-- <p id="demo">HTML içeriğini değiştirebilir.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JAvascript'">Click me!</button><br><br> -->
+
+    <!-- html attribute (özellikleri değiştirebilir) -->
+    <!-- <button onclick="document.getElementById('myImage').src = 'sabah.jpeg'">Sabah</button>
+    <img id="myImage" src="sabah.jpeg">
+    <button onclick="document.getElementById('myImage').src='akşam.jpeg'">Akşam</button><br><br> -->
+
+    <!-- html stil özelliklerini değiştirebilir -->
+    <!-- <p id="stil">HTML stil özelliklerini değiştirebilir</p>
+    <button type="button" onclick="document.getElementById('stil').style.fontSize='35px'">
+    Click Me!</button><br><br>
+
+    <button type="button" onclick="document.getElementById('element').style.display='none'">Gizle</button>
+    <button type="button" onclick="document.getElementById('element').style.display='block'">Göster</button>
+    <p id="element">HTML elementleri gizleyebilir/gösterebilir</p>
+    <p>Burası paragrrafın devamıdır</p> -->
+
+
+    <p id="demo">Değişecek paragraf</p>
+    <button type="button" onclick="myFunction1()">Head</button>
+    <button type="button" onclick="myFunction2()">Body</button>
+    <button type="button" onclick="myFunction3()">External</button>
+    <script>
+        function myFunction2() {
+            document.getElementById("demo").innerHTML = "Body içindeki script çalıştı"
+        }
+    </script>
+    <script src="javascript.js"></script>
+</body>
+</html>
