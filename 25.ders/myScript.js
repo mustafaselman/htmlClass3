@@ -123,6 +123,9 @@
 //     },
 //     showName: function () {
 //         return this.name
+//     },
+//     fonk2: function () {
+//         return alert("window metodu çalıştı")
 //     }
 // }
 // console.log(person.description())
@@ -220,9 +223,9 @@
 let text = '{"firstName":"Ahmet","lastName":"Can"}'
 console.log(text)
 console.log(JSON.parse(text))
-console.log(JSON.parse(text).firstName) //json çözümleme
-console.log(JSON.stringify(JSON.parse(text))) //json haline getirme
-let text2 = '{"employees":[{"firstName":"Ahmet","lastName":"Can"},{"firstName":"mahmut","lastName":"Can"},{"firstName":"fırat","lastName":"Can"}]}'
-console.log(JSON.parse(text2))
+// console.log(JSON.parse(text).firstName) //json çözümleme
+// console.log(JSON.stringify(JSON.parse(text))) //json haline getirme
+// let text2 = '{"employees":[{"firstName":"Ahmet","lastName":"Can"},{"firstName":"mahmut","lastName":"Can"},{"firstName":"fırat","lastName":"Can"}]}'
+// console.log(JSON.parse(text2).employees[2].firstName)
 
 //ödev : ben ekrana "fırat can" yazdırmak istiyorum yukarıdaki json verisi ile nasıl yazarım ?
