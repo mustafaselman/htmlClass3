@@ -168,4 +168,11 @@ function calc(num1,num2, myCallback = () => {}){
     myCallback(sum)
     return sum;
 }
-console.log(calc(4,5))
+calc(4,5,display)
+
+//settime setinterval fonksiyonlar
+function myFunction(){
+    console.log("function running..")
+}
+// setTimeout(myFunction,3000)
+// setInterval(myFunction,3000)
