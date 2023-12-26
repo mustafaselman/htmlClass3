@@ -110,6 +110,97 @@
 
 //homework: 1 den 10 a kadar girince geçerli olan fonksiyonu yazınız
 
-document.getElementById("demo").style.color = "red"
-document.getElementById("demo2").style.backgroundColor = "yellow"
-console.log(document.getElementById("demo2"))
+// document.getElementById("demo").style.color = "red"
+// document.getElementById("demo2").style.backgroundColor = "yellow"
+// console.log(document.getElementById("demo2"))
+
+//using events
+function changeColor() {
+    let x = document.getElementById("id1").style.color = "red"
+}
+
+// function hide(){
+//     let x = document.getElementById("p2").style.visibility = "hidden"
+// }
+
+// let hide = () => document.getElementById("p2").style.visibility = "hidden"
+
+// function show(){
+//     let x = document.getElementById("p2").style.visibility = "visible"
+// }
+
+// function changeText(id){
+//     id.innerHTML = "Oooops"
+// }
+
+//onchange event
+// function upperCase(){
+//     const x = document.getElementById("fname");
+//     x.value = x.value.toUpperCase();
+// }
+
+// function mOver(obj){
+//     obj.innerHTML = "thank you"
+//     obj.style.backgroundColor = "blue"
+//     obj.style.color = "white"
+// }
+// function mOut(obj) {
+//     obj.innerHTML = "mouse over me"
+//     obj.style.backgroundColor = "red"
+// }
+
+// document.getElementById("myBtn").addEventListener("click",
+// function(){
+//     alert("Hello world")
+// })
+
+// let x = document.getElementById("myBtn")
+// x.addEventListener("mouseover",myFunction)
+// x.addEventListener("click",mySecondFunction)
+// x.addEventListener("mouseout",myThirdFunction)
+
+// function myFunction(){
+//     document.getElementById("demo").innerHTML += "Moused over!<br>"
+// }
+// function mySecondFunction(){
+//     document.getElementById("demo").innerHTML += "Clicked!<br>"
+// }
+// function myThirdFunction(){
+//     document.getElementById("demo").innerHTML += "Moused out!<br>"
+// }
+
+//bubbling-capturing
+//bubbling de önce en içteki
+//capturing de önce en dıştaki
+//false bubbling true capturing
+
+// document.getElementById("myP1").addEventListener("click",
+// function(){
+//     alert("myP1")
+// },false
+// )
+// document.getElementById("myDiv1").addEventListener(
+//     "click",
+//     function(){
+//         alert("myDiv1")
+//     },false
+// )
+// document.getElementById("myP2").addEventListener("click",
+// function(){
+//     alert("myP2")
+// },true
+// )
+// document.getElementById("myDiv2").addEventListener(
+//     "click",
+//     function(){
+//         alert("myDiv2")
+//     },true
+// )
+
+document.getElementById("myDIV").addEventListener("mousemove",myFunction)
+function myFunction(){
+    document.getElementById("demo").innerHTML = Math.random()
+}
+function removeHandler(){
+    document.getElementById("myDIV").removeEventListener("mousemove",myFunction)
+}
